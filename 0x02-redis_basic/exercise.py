@@ -17,7 +17,7 @@ class Cache:
     """
     Initialize the redis instance and flush the db
     """
-    self._redis = redis.Redis(db=2)
+    self._redis = redis.Redis()
     self._redis.flushdb()
 
 
